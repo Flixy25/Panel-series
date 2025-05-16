@@ -37,9 +37,9 @@
     }
 
     h1 {
-      color: #fff;
+     color: #fff;
+     font-size: 1.50rem; 
     }
-
     .botones-container {
       display: flex;
       justify-content: flex-start;
