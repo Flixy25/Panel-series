@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Película Favorita</title>
+  <title>FLIXY</title>
   <style>
     /* Imagen de fondo y overlay oscuro */
     body {
@@ -190,17 +190,16 @@
 <body>
   <div class="glass">
       
-    <h1>El jardinero (2025)</h1>
+    <h1>Government Cheese (2025)</h1>
     
     <p class="describe">
-        películas agradads s todos los usuarios del junio de todos 
+        Cuando Hampton es liberado de prisión, su tan esperada reunión familiar no sale como esperaba. 
     </p>
 
     <div class="botones-container">
       <div class="botones">
         <button class="button" onclick="mostrarCapitulos('t1')">T1</button>
-        <button class="button" onclick="mostrarCapitulos('t2')">T2</button>
-        <button class="button" onclick="mostrarCapitulos('t3')">T3</button>
+        
         
       </div>
     </div>
@@ -210,7 +209,12 @@
     <div id="t1" class="capitulos">
       <h3>T1</h3>
       <ul>
-        <li onclick="abrirModal('https://linko.uno/?v=urp277mkpe68')">C1</li>
+        <li onclick="abrirModal('https://linko.uno/sp/?v=rnhnmvk5e12d')">C1</li>
+        <li onclick="abrirModal('https://linko.uno/sp/?v=8fumaaqexgwv')">C2</li>
+        <li onclick="abrirModal('https://linko.uno/sp/?v=vinqcflmomwd')">C3</li>
+        <li onclick="abrirModal('https://linko.uno/sp/?v=efyw3z0kpdp9')">C4</li>
+        <li onclick="abrirModal('https://linko.uno/sp/?v=evcqj5acvpns')">C5</li>
+        <li onclick="abrirModal('https://linko.uno/sp/?v=iq88ltdn3md7')">C6</li>
         
       </ul>
     </div>
