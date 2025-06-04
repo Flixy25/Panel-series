@@ -1,0 +1,442 @@
+
+<!DOCTYPE html>  <html lang="es">  
+<head>  
+  <meta charset="UTF-8">  
+  <title>FS</title>  
+  <style>  
+    /* Imagen de fondo y overlay oscuro */  
+    body {  
+      margin: 0;  
+      padding: 0;  
+      font-family: Arial, sans-serif;  
+      background: url('http') no-repeat center center fixed;  
+      background-size: cover;  
+      position: relative;  
+    }  body::before {  
+  content: '';  
+  position: fixed;  
+  top: 0;  
+  left: 0;  
+  width: 100%;  
+  height: 100%;  
+  background: rgba(0, 0, 0, 6.8);  
+  backdrop-filter: blur(3px); /* Aplica el filtro de desenfoque solo al fondo */  
+  z-index: -1;  
+}  
+
+.glass {  
+  /* Se eliminó el fondo de esta sección */  
+  border-radius: 12px;  
+  padding: 20px;  
+  margin: 0px auto;  
+  max-width: 1000px;  
+  
+  color: #fff;  
+}  
+
+h1 {
+
+color: #fff;
+font-size: 1.50rem;
+}
+
+.botones-container {  
+  display: flex;  
+  justify-content: flex-start;  
+  gap: 10px;  
+  margin-bottom: 20px;  
+  overflow-x: auto;  
+  padding-bottom: 10px;  
+}  
+
+.botones {  
+  display: flex;  
+  gap: 10px;  
+}
+
+.button {
+padding: 12px 30px;
+font-size: 16px;
+background: linear-gradient(45deg, #ff0000, #ff9900);
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+white-space: nowrap;
+transition: background 0.3s ease;
+}
+
+.button:hover {
+background: linear-gradient(45deg, #cc0000, #ff6600);
+}
+
+.capitulos {  
+  display: none;  
+  margin-top: 20px;  
+}  
+
+.capitulos h3 {  
+  text-align: left;  
+}  
+
+.capitulos ul {  
+  list-style-type: none;  
+  padding: 0;  
+  margin: 0;  
+  display: flex;  
+  flex-direction: column;  
+  gap: 10px;  
+}  
+
+.capitulos li {  
+  background: rgba(255, 255, 255, 0.15);  
+  color: white;  
+  padding: 10px;  
+  border-radius: 4px;  
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);  
+  cursor: pointer;  
+}  
+
+.capitulos li:hover {  
+  background-color: rgba(255, 255, 255, 0.25);  
+}  
+
+@media (min-width: 1024px) {  
+  .capitulos ul {  
+    flex-direction: row;  
+    flex-wrap: wrap;  
+    justify-content: center;  
+    gap: 15px;  
+  }  
+
+  .capitulos li {  
+    flex: 1 1 calc(16.66% - 10px);  
+    max-width: 180px;  
+  }  
+}  
+
+@media (max-width: 1024px) {  
+  .capitulos ul {  
+    flex-direction: row;  
+    flex-wrap: wrap;  
+    justify-content: center;  
+    gap: 15px;  
+  }  
+
+  .capitulos li {  
+    flex: 1 1 calc(5% - 1px);  
+    max-width: 180px;  
+  }  
+}  
+
+@media (max-width: 480px) {    
+  .button {  
+    padding: 10px 20px;  
+    font-size: 14px;  
+  }  
+
+  .botones-container {  
+    -webkit-overflow-scrolling: touch;  
+    overflow-x: auto;  
+    white-space: nowrap;  
+  }  
+}  
+
+/* Modal pantalla completa */  
+.modal {  
+  display: none;  
+  position: fixed;  
+  z-index: 9999;  
+  left: 0;  
+  top: 0;  
+  width: 100%;  
+  height: 100%;  
+  background-color: rgba(0, 0, 0, 0.9);  
+}  
+
+.modal-content.full {  
+  width: 100%;  
+  height: 100%;  
+  margin: 0;  
+  border: none;  
+  padding: 0;  
+  border-radius: 0;  
+  position: relative;  
+}  
+
+.modal-content.full iframe {
+
+width: 100%;
+height: 100%;
+border: none;
+background-color: black;
+}
+
+.modal-content.full .close {  
+  position: absolute;  
+  top: 10px;  
+  right: 20px;  
+  color: white;  
+  font-size: 32px;  
+  font-weight: bold;  
+  cursor: pointer;  
+  z-index: 10;  
+}  
+
+.modal-content.full .close:hover {  
+  color: #f00;  
+}
+
+  </style>  
+</head>  
+<body>  
+  <div class="glass">  
+      <h1>Elite (2018)</h1>  
+  
+<p class="describe">  
+    Disfruta de este contenido totalmente gratis y en HD 
+</p>  
+
+
+<div class="botones-container">  
+  <div class="botones">  
+      
+<button class="button" onclick="mostrarCapitulos('t1')">T - 1
+</button>  
+
+    
+<button class="button" onclick="mostrarCapitulos('t2')">T - 2
+</button>  
+    
+
+<button class="button" onclick="mostrarCapitulos('t3')">T - 3
+</button>  
+
+    
+<button class="button" onclick="mostrarCapitulos('t4')">T - 4
+</button>  
+    
+
+      <button class="button" onclick="mostrarCapitulos('t5')">T - 5
+</button>  
+
+    
+<button class="button" onclick="mostrarCapitulos('t6')">T - 6
+</button>  
+
+<button class="button" onclick="mostrarCapitulos('t7')">T - 7
+</button>  
+    
+<button class="button" onclick="mostrarCapitulos('t8')">T - 8
+</button>  
+      
+      
+      
+      
+      
+  </div>  
+</div>  
+
+
+
+<div id="t1" class="capitulos">  
+    <h3>T1</h3>
+<ul>       
+    
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=45dgi64rzdnl')">C1</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=mciucuvdaqzj')">C2</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=9hdqnzs7wf0x')">C3</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=nhmgiz2i6e56')">C4</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=d9o01l539kqn')">C5</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=qtw0gt79c1up')">C6</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=kd96magkqcth')">C7</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=0kx9n8909ej4')">C8</li>
+
+ 
+      
+      
+</ul>  
+</div>  
+  
+  
+  
+  
+  
+<div id="t2" class="capitulos">  
+<h3>T2</h3>  
+<ul>  
+      
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=60n0ukj4kolu')">C1</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=0sd3az9imr7v')">C2</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=negegq2c9ydd')">C3</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=2xmyslld15f1')">C4</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=o5ubymskqmyp')">C5</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=tbgsqvif3e10')">C6</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=wesxkk31ed4e')">C7</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=7kump76hrd0l')">C8</li>
+
+
+</ul>  
+</div>  
+
+
+
+<div id="t3" class="capitulos">  
+<h3>T3</h3>  
+<ul>  
+      
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=txabbhsjsp8c')">C1</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=n3gynzjg4y6d')">C2</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=k7b1axn6nl0t')">C3</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=hkmy97iewkzi')">C4</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=ii1wqv1o2r5r')">C5</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=7axe2kwvha21')">C6</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=ra0hqrgvbwhi')">C7</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=o51guwmowms1')">C8</li>
+
+
+
+
+</ul>  
+</div>  
+
+
+
+<div id="t4" class="capitulos">  
+<h3>T4</h3>  
+<ul>  
+      
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=1y6wvvvy8ykk')">C1</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=cvym50yll9nw')">C2</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=iqrud06ytgn1')">C3</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=b1fmw30fn8mj')">C4</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=8cqsmgntvfsy')">C5</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=x84jm6j4r6j1')">C6</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=nb5q8p01tr7j')">C7</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=w9ynhd4oe5c4')">C8</li>
+
+
+
+
+</ul>  
+</div>  
+
+
+<div id="t5" class="capitulos">  
+<h3>T5</h3>  
+<ul>  
+      
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=7kxsx5uaxdt3')">C1</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=ddoep8nzunaj')">C2</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=2awawm27x85j')">C3</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=ko7gjk5a66ut')">C4</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=rvyhsb3r9smi')">C5</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=5y8x9budm067')">C6</li>
+
+<li onclick="abrirModal('')">C7</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=scotoryohhuo')">C8</li>
+
+
+
+
+</ul>  
+</div>  
+
+
+
+
+<div id="t6" class="capitulos">  
+<h3>T6</h3>  
+<ul>  
+      
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=tq9va8oxjv5k')">C1</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=7ua9axam7hxi')">C2</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=f15gzf1udi65')">C3</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=fcw6o4qxtslo>')">C4</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=nekneiq7s99d')">C5</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=90h4p8qk03mz')">C6</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=uaxy443p2r2l')">C7</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=qw4y2cvcqqe6')">C8</li>
+
+
+
+
+</ul>  
+</div>  
+
+
+
+
+<div id="t7" class="capitulos">  
+<h3>T7</h3>  
+<ul>  
+      
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=ym0qexciufxc')">C1</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=kg23zyp015nx')">C2</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=ym0qexciufxc')">C3</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=tfvk52pqdsf1')">C4</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=gn2qwcgk77vm')">C5</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=pmcw8asmd8kd')">C6</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=v8427c9kh6eh')">C7</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=wfdn3vspd7qe')">C8</li>
+
+
+
+
+</ul>  
+</div>  
+
+<div id="t8" class="capitulos">  
+<h3>T8</h3>  
+<ul>  
+      
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=6g7g90x8oeti')">C1</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=5s8tiebohp98')">C2</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=05epmramqtyw')">C3</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=5ms7ebcxsk2h')">C4</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=6xce8j1a78zy')">C5</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=447oj19i66wa')">C6</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=dsadhjichgeq')">C7</li>
+<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=ui8itdetju69')">C8</li>
+
+
+
+
+</ul>  
+</div>  
+
+
+  </div>    <!-- Modal pantalla completa -->    <div id="videoModal" class="modal">  
+    <div class="modal-content full">  
+      <span class="close" onclick="cerrarModal()">&times;</span>  
+      <iframe id="reproductor" allowfullscreen sandbox="allow-scripts allow-same-origin allow-forms"></iframe>  
+    </div>  
+  </div>    <script>  
+    function mostrarCapitulos(id) {
+  const allSeasons = document.querySelectorAll('.capitulos');
+  allSeasons.forEach(season => season.style.display = 'none');
+  document.getElementById(id).style.display = 'block';
+}
+  
+    function abrirModal(url) {  
+      const modal = document.getElementById('videoModal');  
+      const reproductor = document.getElementById('reproductor');  
+      reproductor.src = url;  
+      modal.style.display = 'block';  
+    }  
+  
+    function cerrarModal() {  
+      const modal = document.getElementById('videoModal');  
+      const reproductor = document.getElementById('reproductor');  
+      reproductor.src = '';  
+      modal.style.display = 'none';  
+    }  
+  
+    window.onclick = function(event) {  
+      const modal = document.getElementById('videoModal');  
+      if (event.target === modal) {  
+        cerrarModal();  
+      }  
+    }  
+  </script>  </body>  
+</html>  
