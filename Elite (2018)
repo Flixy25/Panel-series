@@ -243,7 +243,7 @@ background-color: black;
     <h3>T1</h3>
 <ul>       
     
-<li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=45dgi64rzdnl')">C1</li>
+<li onclick="abrirModal('https://dropload.io/e/45dgi64rzdnl')">C1</li>
 <li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=mciucuvdaqzj')">C2</li>
 <li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=9hdqnzs7wf0x')">C3</li>
 <li onclick="abrirModal('https://compuphd.com/demo/dropload/dropload.php?v=nhmgiz2i6e56')">C4</li>
