@@ -220,10 +220,10 @@ background-color: black;
     <h3>T1</h3>
 <ul>       
     
-<li onclick="abrirModal('https://flmplyrflixy.pages.dev/?id=ajiwvi8bdmkg')">C1</li>
-<li onclick="abrirModal('https://flmplyrflixy.pages.dev/?id=8wjpo6umbgnt')">C2</li>
-<li onclick="abrirModal('https://flmplyrflixy.pages.dev/?id=9s5nh1b7r671')">C3</li>
-<li onclick="abrirModal('https://flmplyrflixy.pages.dev/?id=qwihzldsyfsp')">C4</li>
+<li onclick="abrirModal('https://flmnplyr.pages.dev//?id=ajiwvi8bdmkg')">C1</li>
+<li onclick="abrirModal('https://flmnplyr.pages.dev//?id=8wjpo6umbgnt')">C2</li>
+<li onclick="abrirModal('https://flmnplyr.pages.dev//?id=9s5nh1b7r671')">C3</li>
+<li onclick="abrirModal('https://flmnplyr.pages.dev//?id=qwihzldsyfsp')">C4</li>
 
 
  
