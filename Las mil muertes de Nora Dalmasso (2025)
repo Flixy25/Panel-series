@@ -1,0 +1,281 @@
+<!DOCTYPE html>  <html lang="es">  
+<head>  
+  <meta charset="UTF-8">  
+  <title>FS</title>  
+  <style>  
+    /* Imagen de fondo y overlay oscuro */  
+    body {  
+      margin: 0;  
+      padding: 0;  
+      font-family: Arial, sans-serif;  
+      background: url('') no-repeat center center fixed;  
+      background-size: cover;  
+      position: relative;  
+    }  body::before {  
+  content: '';  
+  position: fixed;  
+  top: 0;  
+  left: 0;  
+  width: 100%;  
+  height: 100%;  
+  background: rgba(0, 0, 0, 1.8);  
+  backdrop-filter: blur(3px); /* Aplica el filtro de desenfoque solo al fondo */  
+  z-index: -1;  
+}  
+
+.glass {  
+  /* Se eliminó el fondo de esta sección */  
+  border-radius: 12px;  
+  padding: 20px;  
+  margin: 0px auto;  
+  max-width: 1000px;  
+  
+  color: #fff;  
+}  
+
+h1 {
+
+color: #fff;
+font-size: 1.50rem;
+}
+
+.botones-container {  
+  display: flex;  
+  justify-content: flex-start;  
+  gap: 10px;  
+  margin-bottom: 20px;  
+  overflow-x: auto;  
+  padding-bottom: 10px;  
+}  
+
+.botones {  
+  display: flex;  
+  gap: 10px;  
+}
+
+.button {
+padding: 12px 30px;
+font-size: 16px;
+background: linear-gradient(45deg, #ff0000, #ff9900);
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+white-space: nowrap;
+transition: background 0.3s ease;
+}
+
+.button:hover {
+background: linear-gradient(45deg, #cc0000, #ff6600);
+}
+
+.capitulos {  
+  display: none;  
+  margin-top: 20px;  
+}  
+
+.capitulos h3 {  
+  text-align: left;  
+}  
+
+.capitulos ul {  
+  list-style-type: none;  
+  padding: 0;  
+  margin: 0;  
+  display: flex;  
+  flex-direction: column;  
+  gap: 10px;  
+}  
+
+.capitulos li {  
+  background: rgba(255, 255, 255, 0.15);  
+  color: white;  
+  padding: 10px;  
+  border-radius: 4px;  
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);  
+  cursor: pointer;  
+}  
+
+.capitulos li:hover {  
+  background-color: rgba(255, 255, 255, 0.25);  
+}  
+
+@media (min-width: 1024px) {  
+  .capitulos ul {  
+    flex-direction: row;  
+    flex-wrap: wrap;  
+    justify-content: center;  
+    gap: 15px;  
+  }  
+
+  .capitulos li {  
+    flex: 1 1 calc(16.66% - 10px);  
+    max-width: 180px;  
+  }  
+}  
+
+@media (max-width: 1024px) {  
+  .capitulos ul {  
+    flex-direction: row;  
+    flex-wrap: wrap;  
+    justify-content: center;  
+    gap: 15px;  
+  }  
+
+  .capitulos li {  
+    flex: 1 1 calc(5% - 1px);  
+    max-width: 180px;  
+  }  
+}  
+
+@media (max-width: 480px) {    
+  .button {  
+    padding: 10px 20px;  
+    font-size: 14px;  
+  }  
+
+  .botones-container {  
+    -webkit-overflow-scrolling: touch;  
+    overflow-x: auto;  
+    white-space: nowrap;  
+  }  
+}  
+
+/* Modal pantalla completa */  
+.modal {  
+  display: none;  
+  position: fixed;  
+  z-index: 9999;  
+  left: 0;  
+  top: 0;  
+  width: 100%;  
+  height: 100%;  
+  background-color: rgba(0, 0, 0, 0.9);  
+}  
+
+.modal-content.full {  
+  width: 100%;  
+  height: 100%;  
+  margin: 0;  
+  border: none;  
+  padding: 0;  
+  border-radius: 0;  
+  position: relative;  
+}  
+
+.modal-content.full iframe {
+
+width: 100%;
+height: 100%;
+border: none;
+background-color: black;
+}
+
+.modal-content.full .close {  
+  position: absolute;  
+  top: 10px;  
+  right: 20px;  
+  color: white;  
+  font-size: 32px;  
+  font-weight: bold;  
+  cursor: pointer;  
+  z-index: 10;  
+}  
+
+.modal-content.full .close:hover {  
+  color: #f00;  
+}
+
+  </style>  
+</head>  
+<body>  
+  <div class="glass">  
+      <h1>
+      Las mil muertes de Nora Dalmasso (2025)
+      </h1>  
+  
+<p class="describe">  
+    Disfruta de este contenido totalmente gratis
+</p>  
+
+
+<div class="botones-container">  
+  <div class="botones">  
+      
+<button class="button" onclick="mostrarCapitulos('t1')">T - 1
+</button>  
+
+    
+
+      
+      
+      
+      
+      
+  </div>  
+</div>  
+
+
+
+<div id="t1" class="capitulos">
+  <h3>T1</h3>
+  <ul>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=nc3mzk6bf4yf')">C1</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=gogm7cvkb2gb')">C2</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=qpwatacx8uud')">C3</li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>  
+  
+  
+  
+  
+  
+
+
+  </div>    <!-- Modal pantalla completa -->    <div id="videoModal" class="modal">  
+    <div class="modal-content full">  
+      <span class="close" onclick="cerrarModal()">&times;</span>  
+      <iframe id="reproductor" allowfullscreen sandbox="allow-scripts"></iframe>  
+    </div>  
+  </div>    <script>  
+    function mostrarCapitulos(id) {
+  const allSeasons = document.querySelectorAll('.capitulos');
+  allSeasons.forEach(season => season.style.display = 'none');
+  document.getElementById(id).style.display = 'block';
+}
+  
+    function abrirModal(url) {  
+      const modal = document.getElementById('videoModal');  
+      const reproductor = document.getElementById('reproductor');  
+      reproductor.src = url;  
+      modal.style.display = 'block';  
+    }  
+  
+    function cerrarModal() {  
+      const modal = document.getElementById('videoModal');  
+      const reproductor = document.getElementById('reproductor');  
+      reproductor.src = '';  
+      modal.style.display = 'none';  
+    }  
+  
+    window.onclick = function(event) {  
+      const modal = document.getElementById('videoModal');  
+      if (event.target === modal) {  
+        cerrarModal();  
+      }  
+    }  
+  </script>  </body>  
+</html>  
