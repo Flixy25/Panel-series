@@ -200,8 +200,8 @@
     <div class="botones-container">
       <div class="botones">
         <button class="button" onclick="mostrarCapitulos('t1')">T1</button>
-        
         <button class="button" onclick="mostrarCapitulos('t2')">T2</button>
+        <button class="button" onclick="mostrarCapitulos('t3')">T3</button>
         
         
       </div>
@@ -209,50 +209,52 @@
 
 
 
+    
     <div id="t1" class="capitulos">
-      <h3>T1</h3>
-      <ul>
-        <li onclick="abrirModal('https://linko.uno/sp/?v=f012x6hrhrcc')">C1</li>
-        <li onclick="abrirModal('https://linko.uno/sp/?v=5ais9n48qheq')">C2</li>
-        <li onclick="abrirModal('https://linko.uno/sp/?v=saojdpelaodw')">C3</li>
-        <li onclick="abrirModal('https://linko.uno/sp/?v=y2sorm09j0tk')">C4</li>
-        <li onclick="abrirModal('https://linko.uno/sp/?v=pexud33pcgep')">C5</li>
-        <li onclick="abrirModal('https://linko.uno/sp/?v=kkwjb8beppv1')">C6</li>
-        <li onclick="abrirModal('https://linko.uno/sp/?v=8nuwqwusoppk')">C7</li>
-        <li onclick="abrirModal('https://linko.uno/sp/?v=i0w6je44rhya')">C8</li>
-        
-        
-        
-      </ul>
-    </div>
+  <h3>T1</h3>
+  <ul>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=gqqwue9mcuez')">C1</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=rtggy86vsy3x')">C2</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=djirf9ckps8q')">C3</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=8fnmq7ptq4vo')">C4</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=77vae2gndvnt')">C5</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=hb20vddcige6')">C6</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=13a3k797qndb')">C7</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=7chtngpi6toc')">C8</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=y6dr4yezhwgk')">C9</li>
+  </ul>
+</div>
+
+<div id="t2" class="capitulos">
+  <h3>T2</h3>
+  <ul>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=95iqp3a9e9o8')">C1</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=lgfc8bhzm4sc')">C2</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=incheac6wl1i')">C3</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=faltaestecapitull')">C4</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=70qcu179h6wl')">C5</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=gyfkxibvf4k4')">C6</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=4muyui8ehf9t')">C7</li>
+  </ul>
+</div>
+
+<div id="t3" class="capitulos">
+  <h3>T3</h3>
+  <ul>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=maojwc7gs8m9')">C1</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=g23jjc3dpaeo')">C2</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=iqjb3ysufhwi')">C3</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=ieogwibz7fk7')">C4</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=e8y2fmpk1gpu')">C5</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=3mqaslczbupg')">C6</li>
+  </ul>
+</div>
 
 
 
-    <div id="t2" class="capitulos">
-      <h3>T2</h3>
-      <ul>
-        <li onclick="abrirModal('https://linko.uno/sp/?v=rujhb7ytil0g')">C1</li>
-        <li onclick="abrirModal('https://linko.uno/sp/?v=x0tdmmmbkpvk')">C2</li>
-        <li onclick="abrirModal('https://linko.uno/sp/?v=32lozqu9ncfp')">C3</li>
-        <li onclick="abrirModal('https://linko.uno/sp/?v=pnfqinb84kjf')">C4</li>
-        <li onclick="abrirModal('https://linko.uno/sp/?v=k5i28mppc05y')">C5</li>
-        <li onclick="abrirModal('https://linko.uno/sp/?v=fjxiqakuiewr')">C6</li>
-        <li onclick="abrirModal('https://linko.uno/sp/?v=gifi3fe7bhvf')">C7</li>
-        
-        
-      </ul>
-    </div>
 
 
-
-    <div id="t3" class="capitulos">
-      <h3>T3</h3>
-      <ul>
-        <li onclick="abrirModal('https://linko.uno/sp/?v=rc0hn9r34468')">C1</li>
-        
-        
-      </ul>
-    </div>
+    
   </div>
   
   
