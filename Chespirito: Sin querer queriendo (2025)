@@ -218,8 +218,11 @@ background-color: black;
 <div id="t1" class="capitulos">
   <h3>T1</h3>
   <ul>
-    <li onclick="abrirModal('https://flmplyrflixy.pages.dev/?id=n0a0xn67jnse')">C1</li>
-    <li onclick="abrirModal('https://flmplyrflixy.pages.dev/?id=04qh9iaq608h')">C2</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=n0a0xn67jnse')">C1</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=04qh9iaq608h')">C2</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=bjazibquztgc')">C3</li>
+    <li onclick="abrirModal('https://flmnplyr.pages.dev/?id=pi54cvkjx7lw')">C4</li>
+
   </ul>
 </div>
 
